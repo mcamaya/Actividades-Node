@@ -1,7 +1,7 @@
-# Actividades-Node
+# API REST desde Node.js
 ## Aquí el paso a paso
 
-**1. Instalamos dependencias**
+### 1. Instalamos dependencias
 Corremos los siguientes comandos dentro de la carpeta backend
 ```
 npm init -y
@@ -11,3 +11,17 @@ npm i dotenv
 npm i promise-mysql
 ```
 Esto nos creará los archivos `package.json` y `package-lock.json`. Son fundamentales. También se ignora la carpeta de `node_modules` en el .`.gitignore`
+
+### 2. Creamos la estructura de carpetas
+
+- **backend**
+    - **src**
+        - **controllers**
+        - **db**
+        - **routes**
+        - app.js
+        - config.js
+        - index.js
+    - .env
+    - package-lock.json
+    - package.json
