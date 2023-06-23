@@ -25,3 +25,11 @@ Esto nos creará los archivos `package.json` y `package-lock.json`. Son fundamen
     - .env
     - package-lock.json
     - package.json
+
+
+### 3. Importamos { express }
+**IMPORTANTE: añadimos una llave `"type":"module` en el archivo `package.json`** 
+
+Importamos express en nuestro archivo `app.js`. Guardamos todo el _poder_ de express dentro de la variable app, asignamos puerto y la exportamos.
+
+Importamos la variable app dentro de index.js y creamos una función para que escuche el puerto de manera constante
