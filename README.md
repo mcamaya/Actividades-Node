@@ -42,3 +42,9 @@ Dentro de el archivo `constructoras.controllers.js` creamos nuestra función par
 Luego dentro de mi enrutador `constructoras.routers.js` importo mi objeto _methodsHTTP_ para usar la función _getConstructoras_
 
 Finalmente, importo el enrutador dentro de mi archivo `app.js` para poder asignarle la debida url que mostrará los datos en formato json.
+
+
+### 5. Configuración variables de entorno
+Escribimos dentro del archivo `.env` nuestras variables de entorno. Este archivo NO se debe hacer público, ya que contiene datos sensibles.
+
+Luego importamos config dentro de nuestro archivo `config.js`, y seguidamente exportamos un objeto que contiene mis variables de entorno 
