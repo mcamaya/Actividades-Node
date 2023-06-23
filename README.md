@@ -1,5 +1,6 @@
 # API REST desde Node.js
 ## Aquí el paso a paso
+Es importante mencionar que cada anotación viene acompañada de un commit en específico. Así que es necesario visualizar los cambios en código para poder entender la explicación.
 
 ### 1. Instalamos dependencias
 Corremos los siguientes comandos dentro de la carpeta backend
@@ -33,3 +34,11 @@ Esto nos creará los archivos `package.json` y `package-lock.json`. Son fundamen
 Importamos express en nuestro archivo `app.js`. Guardamos todo el _poder_ de express dentro de la variable app, asignamos puerto y la exportamos.
 
 Importamos la variable app dentro de index.js y creamos una función para que escuche el puerto de manera constante
+
+
+### 4. Usamos el enrutador y el controlador para mostrar datos
+Dentro de el archivo `constructoras.controllers.js` creamos nuestra función para obtener los datos de la database (aún falta hacer la conexión). 
+
+Luego dentro de mi enrutador `constructoras.routers.js` importo mi objeto _methodsHTTP_ para usar la función _getConstructoras_
+
+Finalmente, importo el enrutador dentro de mi archivo `app.js` para poder asignarle la debida url que mostrará los datos en formato json.
