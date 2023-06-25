@@ -54,3 +54,6 @@ Luego importamos config dentro de nuestro archivo `config.js`, y seguidamente ex
 En mi archivo `database.js` se creó la conexión gracias a la dependencia promise-mysql. Este archivo se comunica con config y crea la conexión. Además exportamos una función que retorna la conexión.
 
 Ahora en mi controlador creo la función asíncrona que sse comunicará con la database, y retorno un json que será leído por el router.
+
+
+### 7. Hacemos los pasos 4 - 6 con los demás módulos

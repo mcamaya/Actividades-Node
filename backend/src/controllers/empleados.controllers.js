@@ -1,11 +1,11 @@
 import getConnection from "../db/database.js";
 
-const getConstructoras = async (req, res) => {
+const getEmpleados = async (req, res) => {
     try {
         const connection = await getConnection();
-        const result = await connection.query("SELECT * FROM constructoras");
+        const result = await connection.query("SELECT * FROM empleados");
         console.log(result);
-        res.json(result);
+        res.json(result); 
     } catch (error) {
         res.status(500);
         res.send(error.message);
@@ -13,5 +13,5 @@ const getConstructoras = async (req, res) => {
 }
 
 export const methodsHTTP = {
-    getConstructoras
+    getEmpleados
 }
