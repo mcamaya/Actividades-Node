@@ -1,5 +1,10 @@
-const getConstructoras = (req, res) => {
-    res.json({"Aquí van los datos": "que llamamos desde la db"});
+import getConnection from "../db/database.js";
+
+const getConstructoras = async (req, res) => {
+    const connection = await getConnection();
+    const result = await connection.query("SELECT * FROM categorias");
+    console.log(result);
+    res.json(result);
 }
 
 export const methodsHTTP = {

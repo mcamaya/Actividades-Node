@@ -3,7 +3,7 @@ import constructorasRoutes from "./routes/constructoras.routes.js";
 
 const app = express();
 
-app.set("port", 5000);
+app.set("port", 3306);
 
 // Routes
 app.use("/api/constructoras", constructorasRoutes);

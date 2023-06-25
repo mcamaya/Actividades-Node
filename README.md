@@ -48,3 +48,9 @@ Finalmente, importo el enrutador dentro de mi archivo `app.js` para poder asigna
 Escribimos dentro del archivo `.env` nuestras variables de entorno. Este archivo NO se debe hacer público, ya que contiene datos sensibles.
 
 Luego importamos config dentro de nuestro archivo `config.js`, y seguidamente exportamos un objeto que contiene mis variables de entorno 
+
+
+### 6. Conexión a la base de datos
+En mi archivo `database.js` se creó la conexión gracias a la dependencia promise-mysql. Este archivo se comunica con config y crea la conexión. Además exportamos una función que retorna la conexión.
+
+Ahora en mi controlador creo la función asíncrona que sse comunicará con la database, y retorno un json que será leído por el router.
