@@ -1,6 +1,8 @@
 import mongoose from "mongoose";
 
-const traderSchema = mongoose.Schema({
+const traderSchema = mongoose.Schema(
+
+{
     nombre: {
         type: String,
         trim: true,
@@ -24,7 +26,8 @@ const traderSchema = mongoose.Schema({
 },
 {
     timestamps: true
-})
+}
+);
 
 const Trader = mongoose.model("trader", traderSchema);
 export default Trader;
