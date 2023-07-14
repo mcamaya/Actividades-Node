@@ -1,0 +1,22 @@
+[
+    {
+        "nombre": "Bitcoin",
+        "tipo": "Criptomoneda",
+        "siglas": "BTC"
+    },
+    {
+        "nombre": "Yen Japonés",
+        "tipo": "Divisa",
+        "siglas": "JPY"
+    },
+    {
+        "nombre": "Dólar Australiano",
+        "tipo": "Divisa",
+        "siglas": "AUD"
+    },
+    {
+        "nombre": "Dólar Canadiense",
+        "tipo": "Divisa",
+        "siglas": "CAD"
+    }
+]

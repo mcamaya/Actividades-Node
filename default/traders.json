@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Esteban Quito",
+        "edad": 26,
+        "nacionalidad": "Colombiano",
+        "presupuestoFiatUSD": 2500
+    },
+    {
+        "nombre": "Alan Brito",
+        "edad": 32,
+        "nacionalidad": "Peruano",
+        "presupuestoFiatUSD": 3200
+    },
+    {
+        "nombre": "Rosa Estrada",
+        "edad": 30,
+        "nacionalidad": "Ecuatoriano",
+        "presupuestoFiatUSD": 3000
+    },
+    {
+        "nombre": "Lucas Solano",
+        "edad": 25,
+        "nacionalidad": "Peruano",
+        "presupuestoFiatUSD": 1400
+    }
+]

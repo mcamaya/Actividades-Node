@@ -1,0 +1,10 @@
+[
+    {
+        "tipo": "Fiat",
+        "descripcion": "Es una forma de dinero fiduciario cuya principal característica es el respaldo gubernamental."
+    },
+    {
+        "tipo": "Crypto",
+        "descripcion": "Activo digital que emplea un cifrado criptográfico para garantizar su titularidad y asegurar la integridad de las transacciones."
+    }
+]
