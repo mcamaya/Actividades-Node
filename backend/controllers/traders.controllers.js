@@ -1,11 +1,7 @@
 import Trader from "../models/Traders.js";
 
-const getTraders = async (req, res) => {
-    const tradersDB = await Trader.find();
-    res.json(tradersDB);
-}
 
-const getOneTrader = async (req, res) => {
+/* const getOneTrader = async (req, res) => {
     const oneTrader = await Trader.find({_id:req.params.id});
     res.json(oneTrader);
 }
@@ -50,12 +46,8 @@ const updateTraders = async (req, res) => {
     } catch (err) {
         console.error(err);
     }
-}
+} */
 
-export {
-    getTraders,
-    getOneTrader,
-    postTraders,
-    deleteTraders,
-    updateTraders
-}
+export default {
+    getTraders: async (req, res) => res.send(await Trader.find())
+} 

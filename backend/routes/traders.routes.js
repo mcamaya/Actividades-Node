@@ -1,12 +1,13 @@
-import { getTraders, getOneTrader, postTraders, deleteTraders, updateTraders } from "../controllers/traders.controllers.js";
+import obj from "../controllers/traders.controllers.js";
 import express from "express";
 
+let {getTraders} = obj;
 const router = express.Router();
 
 router.get("/", getTraders);
-router.get("/:id", getOneTrader);
+/* router.get("/:id", getOneTrader);
 router.post("/", postTraders);
 router.delete("/:id", deleteTraders);
-router.patch("/:id", updateTraders);
+router.patch("/:id", updateTraders); */
 
 export default router;
